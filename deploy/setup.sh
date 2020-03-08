@@ -9,7 +9,8 @@ PROJECT_BASE_PATH='/usr/local/apps/profiles-rest-api'
 
 echo "Installing dependencies..."
 # yum update
-yum install -y virtualenv sqlite pip supervisor nginx git
+yum install -y virtualenv sqlite supervisor nginx git
+dnf install python3-pip 
 
 # Create project directory
 mkdir -p $PROJECT_BASE_PATH
